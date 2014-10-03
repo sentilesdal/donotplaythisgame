@@ -16,6 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ActivityGame"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_activity_game"
+            android:parentActivityName=".ActivityMain"
+            android:theme="@style/GameTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="broccoli.donotplaythisgame.ActivityMain" />
+        </activity>
     </application>
 
 </manifest>
